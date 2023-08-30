@@ -296,7 +296,9 @@ text-align: start;
 }
 
 @include breakPointMedium {
-  display: contents;
+  .product__buying {
+    display: contents;
+  }
 }
 
 .product__buying-buy {
