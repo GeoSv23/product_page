@@ -1,5 +1,5 @@
 @mixin breakPointSmall {
-    @media screen and (min-width: 1400px) {
+    @media screen and (max-width: 576px) {
       @content;
     }
   }
@@ -187,27 +187,53 @@ text-transform: uppercase;
     height: 380px;
     gap: 20px;
   }
-
+@include breakPointMedium {
+  .item {
+    margin-bottom: 50px;
+    gap: 20px;
+    width: auto;
+    height: auto;
+    display: block;
+  }
+}
   .product__images {
     display: flex;
     width: 100%;
     margin-bottom: 0px;
   }
 
-
+@include breakPointMedium {
+  .product__images {
+    margin-bottom: 20px;
+    height: 330px;
+    justify-content: center;
+  }
+}
 
 .productBorder {
   border: 1px solid gray;
   padding: 5px;
 }
 
-.product__desc {
+@include breakPointMedium {
+  .productBorder {
+    width: 420px;
+  }
+}
+
+.product__desc-page {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
   border: 1px solid gray;
   padding: 5px;
+}
+
+@include breakPointMedium {
+  .product__desc-page {
+    margin-bottom: 1px;
+  }
 }
 
 .product__title {
