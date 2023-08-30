@@ -205,7 +205,8 @@ text-transform: uppercase;
 @include breakPointMedium {
   .product__images {
     margin-bottom: 20px;
-    height: 330px;
+    width: 90%;
+    margin: auto;
     justify-content: center;
   }
 }
@@ -217,7 +218,9 @@ text-transform: uppercase;
 
 @include breakPointMedium {
   .productBorder {
-    width: 420px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
   }
 }
 
@@ -282,8 +285,18 @@ text-transform: uppercase;
 text-align: start;
 }
 
+@include breakPointMedium {
+  .product__coast {
+    text-align: center;
+  }
+}
+
 .product__buying {
   margin: 20px 0px;
+}
+
+@include breakPointMedium {
+  display: contents;
 }
 
 .product__buying-buy {
