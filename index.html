@@ -1,13 +1,214 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="#" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <link rel="stylesheet" type="text/css" href="/style.scss" />
+    <title>product page</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header class="header__general">
+      <div class="header__info">
+        <a class="header__a" href="https://www.google.ru/">по умолчанию</a>
+        <a class="header__a" href="#">по умолчанию</a>
+        <a class="header__a" href="#">по умолчанию</a>
+      </div>
+      <div class="header__image">
+        <a href="https://geosv23.github.io/funk/">
+          <img src="/public/images/OJJO.png" alt="ojjo" />
+        </a>
+      </div>
+      <div class="header__nav">
+        <a href="https://www.google.ru/">
+          <img src="/public/icons/gridicons_search.png" alt="" />
+        </a>
+        <a class="header__a" href="#">по умолчанию</a>
+        <a class="header__a" href="#">по умолчанию</a>
+        <a href="https://www.google.ru/">
+          <img src="/public/icons/user.png" alt="" />
+        </a>
+        <a href="https://www.google.ru/">
+          <img src="/public/icons/hart.png" alt="" />
+        </a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="wrapper">
+        <p class="product__nav">
+          <a href="https://geosv23.github.io/funk/">Главная</a> /
+          <a href="https://geosv23.github.io/funk_catalog/">Каталог</a> /
+          <a href="#">Категория</a> / Подвеска Dolce & Gabarra
+        </p>
+        <div class="item">
+          <div class="product__images">
+            <img
+              class="product__images"
+              src="public/images/Rectangle 21.png"
+              alt=""
+            />
+          </div>
+          <div class="productBorder">
+            <div class="product__desc">
+              <h1 class="product__title">Подвеска Dolce & Gabbara</h1>
+              <p class="product__cat">
+                Категория: Подвески Бренд: Dolce & Gabanna
+              </p>
+              <div class="product__line"></div>
+              <p class="product__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
+                ad fugit animi fugiat delectus reprehenderit harum corrupti
+                perferendis.
+              </p>
+              <h1 class="product__coast">209 000</h1>
+              <div class="product__buying">
+                <a href="#" class="product__buying-buy">Купить</a>
+                <a href="#" class="product__buying-basket">
+                  Добавить в корзину
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="delivery">
+          <div class="delivery__desc">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+            asperiores aliquid nesciunt veritatis quia molestias exercitationem
+            officiis explicabo voluptas temporibus.
+          </div>
+          <div class="delivery__icons">
+            <a href="#" class="delivery__icon">
+              <img src="public/images/icon__list.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="moreProducts">
+          <p class="moreProducts__preDesc">
+            Мы подготовили для вас кое-что еще
+          </p>
+          <h1 class="moreProducts__Desc">
+            Товары, которые могут Вам понравиться
+          </h1>
+        </div>
+        <div class="catalogCards">
+          <div class="catalogCards__card">
+            <a class="catalogCards__imageLink" href="">
+              <img
+                class="catalogCards__image"
+                src="/public/images/Rectangle 21.png"
+                alt=""
+              />
+            </a>
+            <p class="catalogCards__preDesc">Подвеска</p>
+            <h1 class="catalogCards__desc">Dolce & Gabanna</h1>
+            <h1 class="catalogCards__coast">175 000r</h1>
+          </div>
+          <div class="catalogCards__card">
+            <a class="catalogCards__imageLink" href="">
+              <img
+                class="catalogCards__image"
+                src="/public/images/Rectangle 21.png"
+                alt=""
+              />
+            </a>
+            <p class="catalogCards__preDesc">Подвеска</p>
+            <h1 class="catalogCards__desc">Dolce & Gabanna</h1>
+            <h1 class="catalogCards__coast">175 000r</h1>
+          </div>
+          <div class="catalogCards__card">
+            <a class="catalogCards__imageLink" href="">
+              <img
+                class="catalogCards__image"
+                src="/public/images/Rectangle 21.png"
+                alt=""
+              />
+            </a>
+            <p class="catalogCards__preDesc">Подвеска</p>
+            <h1 class="catalogCards__desc">Dolce & Gabanna</h1>
+            <h1 class="catalogCards__coast">175 000r</h1>
+          </div>
+        </div>
+      </div>
+      <section class="distribution">
+        <p class="distribution__p">
+          Полезные советы и персональный предложения
+        </p>
+        <h1 class="distribution__h1">Эксклюзивная рассылка</h1>
+        <div class="distribution__form">
+          <ul class="distribution__form_list">
+            <li><a href="">Личный менеджер</a></li>
+            <li><a href="">Доставка и оформление</a></li>
+            <li><a href="">Индивидуальный дизайн</a></li>
+          </ul>
+          <form class="distribution__form_board" action="#" method="get">
+            <div class="distribution__form_contain">
+              <input placeholder="ВАШ E-BAIL" type="text" />
+              <button class="distribution__form_button">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__contacts">
+          <div class="footer__contacts-column">
+            <ul class="footer__contacts-ul">
+              <h1>Полезные ссылки</h1>
+              <li>Доставка</li>
+              <li>Оплата</li>
+              <li>Акции</li>
+              <li>Политика конфидециальности</li>
+            </ul>
+          </div>
+          <div class="footer__contacts-column">
+            <ul class="footer__contacts-ul">
+              <h1>Оплата</h1>
+              <li>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Incidunt officiis voluptates nesciunt.
+              </li>
+              <li>
+                <img src="public/icons/Rectangle 13.png" alt="" /><img
+                  src="public/icons/Rectangle 14.png"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contacts-column">
+            <ul class="footer__contacts-ul">
+              <h1>Контакты</h1>
+              <li>8 (812) 234-56-55</li>
+              <li>8 (812) 234-56-55</li>
+              <li>ojjo@ojjo.ru</li>
+            </ul>
+          </div>
+          <div class="footer__contacts-column">
+            <ul class="footer__contacts-ul">
+              <h1>Социальные сети</h1>
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam,
+                iste!
+              </li>
+              <li>
+                <img src="public/icons/Vector (21).png" alt="" /><img
+                  src="public/icons/Vector (22).png"
+                  alt=""
+                />
+                <img src="public/icons/Vector (23).png" alt="" /><img
+                  src="public/icons/Vector (24).png"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__rights">
+          <p class="footer__rights-p">(c) 2020 OJJO jewelry</p>
+          <p class="footer__rights-p">Договор публичной офферты</p>
+          <p class="footer__rights-p">Контрагентам</p>
+          <p class="footer__rights-p">Сделано Figma.info</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
