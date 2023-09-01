@@ -108,6 +108,21 @@ text-transform: uppercase;
       margin: auto;
     }
   }
+
+  
+.header__general a:link {
+  font-family: Gilroy;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; 
+  color: $light;
+}
+
+.header__general a:hover {
+  color: $light;
+  text-shadow: 0px 0px 12px white;
+}
   
   @media screen and (max-width: 1100px) {
       .header__general {
